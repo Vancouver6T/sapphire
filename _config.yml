@@ -1,0 +1,47 @@
+# Site settings
+# title: Emerald | A simple Jekyll blog
+# description: "A minimal blog template, build with Jekyll."
+# url: "http://www.jacoporabolini.com/emerald"
+# author:
+#   name: "Jacopo Rabolini"
+#   email: "hello@jacoporabolini.com"
+#   url: "http://www.jacoporabolini.com"
+title: Sapphire | A simple Jekyll blog based on Emerald
+description: "A minimal blog template, build with Jekyll."
+url: "vancouver6t.github.io"
+author:
+  name: "Vancouver6T"
+  email: "vancouver6t@outlook.com"
+  url: "vancouver6t.github.io"
+
+# Build settings
+baseurl: /emerald # Change this to your relative path (ex: /blog/), or leave just a /
+# baseurl: /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+# reverse: false
+reverse: true
